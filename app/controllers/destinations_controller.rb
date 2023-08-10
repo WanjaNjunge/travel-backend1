@@ -10,7 +10,10 @@ class DestinationsController < ApplicationController
 
   # GET /destinations/1
   def show
-    render json: @destination
+    destination = Destination.find(params[:id])
+    travel_packages = destination.travel_packages
+
+    render json: { destination: destination, travel_packages: travel_packages }, status: :ok
   end
 
   # POST /destinations
