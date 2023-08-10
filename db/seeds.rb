@@ -103,7 +103,7 @@ mount_kenya = Destination.create!(destination_list[23].merge)
 nakuru = Destination.create!(destination_list[24].merge)
  
   # Create Travel Packages
-    TravelPackage.create!(
+    paris = TravelPackage.create!(
     name: 'Romantic Paris Getaway',
     description: 'Experience the romance of Paris with your loved one.',
     image_url: 'https://upload.wikimedia.org/wikipedia/en/4/41/Paris%2CFrance.jpg',
@@ -113,7 +113,7 @@ nakuru = Destination.create!(destination_list[24].merge)
     destination_id: paris.id
   )
  
-    TravelPackage.create!(
+    bali = TravelPackage.create!(
     name: 'Exotic Bali Adventure',
     description: 'Explore the exotic beauty of Bali through adventure activities.',
     image_url: 'https://travel.usnews.com/dims4/USNEWS/00e9466/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https%3A%2F%2Ftravel.usnews.com%2Fimages%2Fgettyimages-520025941_5j9mOtt.jpg',
@@ -305,6 +305,28 @@ contact9.save
 contact10 = Contact.new(name: "Ava Anderson", email: "ava@example.com", message: "Hi, it's Ava.")
 contact10.save
 
+
+# Create reviews
+Review.create!(
+  name: "John Doe",
+  comment: "Had an amazing experience with this package!",
+  rating: 5,
+  travel_package: paris
+)
+
+Review.create!(
+  name: "Jane Smith",
+  comment: "The trip was wonderful, highly recommended.",
+  rating: 4,
+  travel_package: bali
+)
+
+Review.create!(
+  name: "Michael Johnson",
+  comment: "Great destination, but the package could use some improvements.",
+  rating: 3,
+  travel_package: paris
+)
 
 
 
