@@ -1,0 +1,59 @@
+/* BookingForm.css */
+.booking-container {
+  background-image: url('https://www.celebritycruises.com/blog/content/uploads/2022/07/best-beaches-to-visit-in-september-navagioshipwreck-beach-zakynthos-greece-1024x683.jpg'); /* Replace with the actual path to your background image */
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.booking-form {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FA7436;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.booking-form-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #FA7436;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form-button:hover {
+  background-color: #32CD32;
+}

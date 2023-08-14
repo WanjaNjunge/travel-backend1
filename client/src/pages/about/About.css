@@ -1,0 +1,48 @@
+/* Styles for the container */
+#about_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Center the heading */
+.about-heading {
+  text-align: center;
+  font-family: 'YourPreferredFont', sans-serif; /* Replace 'YourPreferredFont' with your desired font-family */
+  font-size: 2.0rem; /* Set the font size to 2.5 rem (adjust as needed) */
+  font-weight: bold; /* Set the font weight to bold */
+}
+
+/* Style the 'Us' in 'About Us' */
+.about-heading span {
+  color: #fa7436; /* Orange color */
+}
+
+/* Style the travel image */
+.about-image {
+  float: left;
+  height: auto;
+  width: 35%;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  margin-right: 20px;
+}
+
+/* Style the paragraph text */
+.about-text {
+  text-align: justify;
+}
+
+.about-text p {
+  color: #9d4015; /* Use your preferred color */
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* Clear floating elements */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}

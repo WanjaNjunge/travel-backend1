@@ -1,0 +1,99 @@
+.login-container {
+  background-image: url('https://www.chasingthedonkey.com/wp-content/uploads/2021/04/Cleopatra-beach_Turkey_Cleopatra-Island_Depositphotos_265905366_s-2019.jpeg'); /* Replace with the actual path to your background image */
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.background {
+  width: 430px;
+  height: 480px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+
+.shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+
+#login_form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 18px;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 20px 24px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+#login_form:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9fc1e760; /* Transparent orange background */
+  border-radius: 10px;
+  z-index: -1;
+  filter: blur(10px); /* Apply blur effect */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+button {
+  background-color: #ffffff;
+  color: #080710;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f85c00;
+}
+
+div[style*='color: red'] {
+  color: red;
+}
